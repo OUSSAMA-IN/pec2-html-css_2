@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <title>Jornadas de Artesanía</title>
+  </head>
+
+  <body>
+   <header class="header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+      <a class="navbar-brand fw-bold" href="index.html">
+        Artesanía Viva
+      </a>
+
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#menu"
+        aria-controls="menu"
+        aria-expanded="false"
+        aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="ponentes.html">Ponentes</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="articulo.html">Jornadas</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+<main class="main">
+      <section class="speakers container">
+        <div class="speakers__intro">
+          <span class=" speakers__badge">
+            Equipo de las jornadas
+          </span>
+
+          <h1 class="speakers__title">Ponentes</h1>
+
+          <p class="speakers__text">
+            Profesionales de distintos oficios artesanales compartirán su experiencia,
+            sus procesos de trabajo y su visión sobre la artesanía contemporánea.
+          </p>
+        </div>
+
+        <div class="speakers__grid">
+          <article class="speaker-card card">
+            <img src="./assets/images/cerámica.png" class="speaker-card__image card-img-top" alt="Artesana trabajando la cerámica" />
+            <div class="card-body speaker-card__body">
+              <p class="speaker-card__role">Cerámica</p>
+              <h2 class="speaker-card__name">Marta Soler</h2>
+              <p class="speaker-card__text">
+                Especialista en cerámica tradicional y creación de piezas hechas a mano.
+              </p>
+            </div>
+          </article>
+
+          <article class="speaker-card card">
+            <img src="./assets/images/carpintera.png" class="speaker-card__image card-img-top" alt="Artesana trabajando la madera" />
+            <div class="card-body speaker-card__body">
+              <p class="speaker-card__role">Madera</p>
+              <h2 class="speaker-card__name">Clara Roca</h2>
+              <p class="speaker-card__text">
+                Carpintera especializada en mobiliario artesanal y materiales de proximidad.
+              </p>
+            </div>
+          </article>
+
+          <article class="speaker-card card">
+            <img src="./assets/images/tejido.png" class="speaker-card__image card-img-top" alt="Artesana trabajando con tejido" />
+            <div class="card-body speaker-card__body">
+              <p class="speaker-card__role">Textil</p>
+              <h2 class="speaker-card__name">Laia Vidal</h2>
+              <p class="speaker-card__text">
+                Creadora textil centrada en fibras naturales, tintes vegetales y tejido manual.
+              </p>
+            </div>
+          </article>
+
+          <article class="speaker-card card">
+            <img src="./assets/images/taller_cuero.png" class="speaker-card__image card-img-top" alt="Artesano trabajando el cuero en un taller" />
+            <div class="card-body speaker-card__body">
+              <p class="speaker-card__role">Cuero</p>
+              <h2 class="speaker-card__name">Omar Benali</h2>
+              <p class="speaker-card__text">
+                Artesano especializado en marroquinería y técnicas tradicionales del cuero.
+              </p>
+            </div>
+          </article>
+
+          <article class="speaker-card card">
+            <img src="./assets/images/soplador_vidrio.png" class="speaker-card__image card-img-top" alt="Artesano soplando vidrio" />
+            <div class="card-body speaker-card__body">
+              <p class="speaker-card__role">Vidrio</p>
+              <h2 class="speaker-card__name">Pau Miró</h2>
+              <p class="speaker-card__text">
+                Soplador de vidrio especializado en piezas decorativas y formas orgánicas.
+              </p>
+            </div>
+          </article>
+
+          <article class="speaker-card card">
+            <img src="./assets/images/forja.png" class="speaker-card__image card-img-top" alt="Artesano trabajando la forja de metal" />
+            <div class="card-body speaker-card__body">
+              <p class="speaker-card__role">Forja</p>
+              <h2 class="speaker-card__name">Joan Martí</h2>
+              <p class="speaker-card__text">
+                Maestro en forja artesanal y creación de piezas metálicas tradicionales.
+              </p>
+            </div>
+          </article>
+        </div>
+        
+        <p class="speakers__note">
+            El programa seguirá creciendo con nuevos ponentes en cada edición.
+       </p> 
+
+        <div class="speakers__action">
+          <a href="contacto.html" class="btn btn-primary">
+            Contactar con la organización
+          </a>
+        </div>
+      </section>
+    </main>
+    
+
+    <include src="views/footer.html"></include>
+
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>
