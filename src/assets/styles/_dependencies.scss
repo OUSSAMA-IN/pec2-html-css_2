@@ -3,6 +3,13 @@
  * see commented examples below
  */
 
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
+/* @import "some-node-module";
+/* @import "@some-company/some-node-module";
+
+/* Personalización de Bootstrap */
+$primary: #a45f2b;
+$border-radius: 1rem;
+$font-family-sans-serif: v.$font-family-sans-serif;
+
+/* Bootstrap */
 @import "bootstrap/scss/bootstrap";
