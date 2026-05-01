@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <title>Jornadas de Artesanía</title>
+  </head>
+
+  <body>
+   <header class="header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+      <a class="navbar-brand fw-bold" href="index.html">
+        Artesanía Viva
+      </a>
+
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#menu"
+        aria-controls="menu"
+        aria-expanded="false"
+        aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="ponentes.html">Ponentes</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="articulo.html">Jornadas</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+  <main class="contact-page">
+
+  <section class="contact-hero">
+    <div class="container">
+      <p class="contact-hero__tag">Contacto</p>
+
+      <h1>Contacta con la organización</h1>
+
+      <p class="contact-hero__text">
+        Si tienes alguna duda sobre las jornadas, los talleres o la inscripción,
+        puedes escribirnos a través del formulario.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+
+      <div class="contact-layout">
+
+        <section class="contact-info">
+          <h2>Información de contacto</h2>
+
+          <p>
+            Las jornadas están organizadas con la colaboración del ayuntamiento
+            y de diferentes profesionales vinculados a la artesanía local.
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <span>info@jornadasartesania.es</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <span>+34 600 000 000</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Centro Cultural Municipal</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <span>Lunes a viernes, de 9:00 a 14:00</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="contact-form-card">
+          <h2>Envíanos un mensaje</h2>
+
+          <form name="contacto" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contacto">
+
+            <div class="mb-3 contact-field">
+              <label for="name" class="form-label">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                required>
+            </div>
+
+            <div class="mb-3 contact-field">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required>
+            </div>
+
+            <div class="mb-3 contact-field">
+              <label for="subject" class="form-label">Motivo de contacto</label>
+              <select class="form-select" id="subject" name="subject" required>
+                <option value="">Selecciona una opción</option>
+                <option value="talleres">Información sobre talleres</option>
+                <option value="inscripcion">Inscripción</option>
+                <option value="ponentes">Participar como ponente</option>
+                <option value="otros">Otros</option>
+              </select>
+            </div>
+
+            <div class="mb-4 contact-field">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                rows="5"
+                required></textarea>
+            </div>
+
+            <div class="form-check contact-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="privacy"
+                name="privacy"
+                required>
+
+              <label class="form-check-label" for="privacy">
+                Acepto que la organización utilice estos datos para responder a mi consulta.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary contact-button">
+              Enviar mensaje
+            </button>
+          </form>
+        </section>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+    <include src="views/footer.html"></include>
+
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>
