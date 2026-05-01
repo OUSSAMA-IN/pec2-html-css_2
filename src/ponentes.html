@@ -49,100 +49,157 @@
   </nav>
 </header>
 <main class="main">
-      <section class="speakers container">
-        <div class="speakers__intro">
-          <span class=" speakers__badge">
-            Equipo de las jornadas
-          </span>
+  <section class="speakers container">
+    <div class="speakers__intro">
+      <span class="speakers__badge">Equipo de las jornadas</span>
 
-          <h1 class="speakers__title">Ponentes</h1>
+      <h1 class="speakers__title">Ponentes</h1>
 
-          <p class="speakers__text">
-            Profesionales de distintos oficios artesanales compartirán su experiencia,
-            sus procesos de trabajo y su visión sobre la artesanía contemporánea.
+      <p class="speakers__text">
+        Profesionales de distintos oficios artesanales compartirán su experiencia,
+        sus procesos de trabajo y su visión sobre la artesanía contemporánea.
+      </p>
+    </div>
+
+    <div class="speakers__grid">
+      <article class="speaker-card card">
+        <picture>
+          <source srcset="./assets/images/cerámica-600.webp" media="(max-width: 768px)">
+          <source srcset="./assets/images/cerámica-900.webp" media="(max-width: 1200px)">
+          <img
+            src="./assets/images/cerámica-1700.webp"
+            class="speaker-card__image card-img-top"
+            alt="Artesana trabajando la cerámica"
+            loading="lazy"
+          />
+        </picture>
+
+        <div class="card-body speaker-card__body">
+          <p class="speaker-card__role">Cerámica</p>
+          <h2 class="speaker-card__name">Marta Soler</h2>
+          <p class="speaker-card__text">
+            Especialista en cerámica tradicional y creación de piezas hechas a mano.
           </p>
         </div>
+      </article>
 
-        <div class="speakers__grid">
-          <article class="speaker-card card">
-            <img src="./assets/images/cerámica.png" class="speaker-card__image card-img-top" alt="Artesana trabajando la cerámica" />
-            <div class="card-body speaker-card__body">
-              <p class="speaker-card__role">Cerámica</p>
-              <h2 class="speaker-card__name">Marta Soler</h2>
-              <p class="speaker-card__text">
-                Especialista en cerámica tradicional y creación de piezas hechas a mano.
-              </p>
-            </div>
-          </article>
+      <article class="speaker-card card">
+        <picture>
+          <source srcset="./assets/images/carpintera-600.webp" media="(max-width: 768px)">
+          <source srcset="./assets/images/carpintera-900.webp" media="(max-width: 1200px)">
+          <img
+            src="./assets/images/carpintera-1700.webp"
+            class="speaker-card__image card-img-top"
+            alt="Artesana trabajando la madera"
+            loading="lazy"
+          />
+        </picture>
 
-          <article class="speaker-card card">
-            <img src="./assets/images/carpintera.png" class="speaker-card__image card-img-top" alt="Artesana trabajando la madera" />
-            <div class="card-body speaker-card__body">
-              <p class="speaker-card__role">Madera</p>
-              <h2 class="speaker-card__name">Clara Roca</h2>
-              <p class="speaker-card__text">
-                Carpintera especializada en mobiliario artesanal y materiales de proximidad.
-              </p>
-            </div>
-          </article>
-
-          <article class="speaker-card card">
-            <img src="./assets/images/tejido.png" class="speaker-card__image card-img-top" alt="Artesana trabajando con tejido" />
-            <div class="card-body speaker-card__body">
-              <p class="speaker-card__role">Textil</p>
-              <h2 class="speaker-card__name">Laia Vidal</h2>
-              <p class="speaker-card__text">
-                Creadora textil centrada en fibras naturales, tintes vegetales y tejido manual.
-              </p>
-            </div>
-          </article>
-
-          <article class="speaker-card card">
-            <img src="./assets/images/taller_cuero.png" class="speaker-card__image card-img-top" alt="Artesano trabajando el cuero en un taller" />
-            <div class="card-body speaker-card__body">
-              <p class="speaker-card__role">Cuero</p>
-              <h2 class="speaker-card__name">Omar Benali</h2>
-              <p class="speaker-card__text">
-                Artesano especializado en marroquinería y técnicas tradicionales del cuero.
-              </p>
-            </div>
-          </article>
-
-          <article class="speaker-card card">
-            <img src="./assets/images/soplador_vidrio.png" class="speaker-card__image card-img-top" alt="Artesano soplando vidrio" />
-            <div class="card-body speaker-card__body">
-              <p class="speaker-card__role">Vidrio</p>
-              <h2 class="speaker-card__name">Pau Miró</h2>
-              <p class="speaker-card__text">
-                Soplador de vidrio especializado en piezas decorativas y formas orgánicas.
-              </p>
-            </div>
-          </article>
-
-          <article class="speaker-card card">
-            <img src="./assets/images/forja.png" class="speaker-card__image card-img-top" alt="Artesano trabajando la forja de metal" />
-            <div class="card-body speaker-card__body">
-              <p class="speaker-card__role">Forja</p>
-              <h2 class="speaker-card__name">Joan Martí</h2>
-              <p class="speaker-card__text">
-                Maestro en forja artesanal y creación de piezas metálicas tradicionales.
-              </p>
-            </div>
-          </article>
+        <div class="card-body speaker-card__body">
+          <p class="speaker-card__role">Madera</p>
+          <h2 class="speaker-card__name">Clara Roca</h2>
+          <p class="speaker-card__text">
+            Carpintera especializada en mobiliario artesanal y materiales de proximidad.
+          </p>
         </div>
-        
-        <p class="speakers__note">
-            El programa seguirá creciendo con nuevos ponentes en cada edición.
-       </p> 
+      </article>
 
-        <div class="speakers__action">
-          <a href="contacto.html" class="btn btn-primary">
-            Contactar con la organización
-          </a>
+      <article class="speaker-card card">
+        <picture>
+          <source srcset="./assets/images/tejido-600.webp" media="(max-width: 768px)">
+          <source srcset="./assets/images/tejido-900.webp" media="(max-width: 1200px)">
+          <img
+            src="./assets/images/tejido-1700.webp"
+            class="speaker-card__image card-img-top"
+            alt="Artesana trabajando con tejido"
+            loading="lazy"
+          />
+        </picture>
+
+        <div class="card-body speaker-card__body">
+          <p class="speaker-card__role">Textil</p>
+          <h2 class="speaker-card__name">Laia Vidal</h2>
+          <p class="speaker-card__text">
+            Creadora textil centrada en fibras naturales, tintes vegetales y tejido manual.
+          </p>
         </div>
-      </section>
-    </main>
-    
+      </article>
+
+      <article class="speaker-card card">
+        <picture>
+          <source srcset="./assets/images/taller_cuero-600.webp" media="(max-width: 768px)">
+          <source srcset="./assets/images/taller_cuero-900.webp" media="(max-width: 1200px)">
+          <img
+            src="./assets/images/taller_cuero-1700.webp"
+            class="speaker-card__image card-img-top"
+            alt="Artesano trabajando el cuero en un taller"
+            loading="lazy"
+          />
+        </picture>
+
+        <div class="card-body speaker-card__body">
+          <p class="speaker-card__role">Cuero</p>
+          <h2 class="speaker-card__name">Omar Benali</h2>
+          <p class="speaker-card__text">
+            Artesano especializado en marroquinería y técnicas tradicionales del cuero.
+          </p>
+        </div>
+      </article>
+
+      <article class="speaker-card card">
+        <picture>
+          <source srcset="./assets/images/soplador_vidrio-600.webp" media="(max-width: 768px)">
+          <source srcset="./assets/images/soplador_vidrio-900.webp" media="(max-width: 1200px)">
+          <img
+            src="./assets/images/soplador_vidrio-1700.webp"
+            class="speaker-card__image card-img-top"
+            alt="Artesano soplando vidrio"
+            loading="lazy"
+          />
+        </picture>
+
+        <div class="card-body speaker-card__body">
+          <p class="speaker-card__role">Vidrio</p>
+          <h2 class="speaker-card__name">Pau Miró</h2>
+          <p class="speaker-card__text">
+            Soplador de vidrio especializado en piezas decorativas y formas orgánicas.
+          </p>
+        </div>
+      </article>
+
+      <article class="speaker-card card">
+        <picture>
+          <source srcset="./assets/images/forja-600.webp" media="(max-width: 768px)">
+          <source srcset="./assets/images/forja-900.webp" media="(max-width: 1200px)">
+          <img
+            src="./assets/images/forja-1700.webp"
+            class="speaker-card__image card-img-top"
+            alt="Artesano trabajando la forja de metal"
+            loading="lazy"
+          />
+        </picture>
+
+        <div class="card-body speaker-card__body">
+          <p class="speaker-card__role">Forja</p>
+          <h2 class="speaker-card__name">Joan Martí</h2>
+          <p class="speaker-card__text">
+            Maestro en forja artesanal y creación de piezas metálicas tradicionales.
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <p class="speakers__note">
+      El programa seguirá creciendo con nuevos ponentes en cada edición.
+    </p>
+
+    <div class="speakers__action">
+      <a href="contacto.html" class="btn btn-primary">
+        Contactar con la organización
+      </a>
+    </div>
+  </section>
+</main>
 
     <include src="views/footer.html"></include>
 
